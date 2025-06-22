@@ -1,5 +1,6 @@
 ---
 title: First Note
+author: mtai
 ---
 
 {% include note-header.html %}
