@@ -8,3 +8,14 @@ a {
 nav {
   font-size: 1.1em;
 }
+.sidebar {
+  display: none !important;
+}
+
+.wrapper {
+  margin-left: 0 !important;
+  width: 100% !important;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
