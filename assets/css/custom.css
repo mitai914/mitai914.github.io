@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
 body {
-  font-family: 'Inter', 'Arial', sans-serif;
+  font-family: 'Fira Sans', 'Inter', Arial, sans-serif;
   background: #fafbfc;
+  color: #23272e;
+  transition: background 0.2s, color 0.2s;
 }
+
 a {
   color: #2196f3;
+  text-decoration: none;
+  transition: color 0.2s;
 }
+
+a:hover {
+  color: #174ea6;
+  text-decoration: underline;
+}
+
 nav {
   font-size: 1.1em;
 }
-.sidebar {
-  display: none !important;
-}
 
+.sidebar,
 .wrapper > header {
   display: none !important;
 }
@@ -22,4 +33,67 @@ nav {
   max-width: 900px;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Custom header bar styling */
+.custom-header {
+  width: 100%;
+  background: #174ea6;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 2em;
+  letter-spacing: 1px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 4px rgba(20,40,60,.06);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #23272e !important;
+  color: #dadada !important;
+}
+
+body.dark-mode a {
+  color: #90cdf4;
+}
+
+body.dark-mode .custom-header {
+  background: #12181f;
+  color: #90cdf4;
+  box-shadow: 0 2px 4px rgba(10,20,30,.16);
+}
+
+body.dark-mode nav,
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3 {
+  color: #ffe484;
+}
+
+/* Code blocks and tables for dark mode */
+body.dark-mode pre,
+body.dark-mode code {
+  background: #181c21 !important;
+  color: #fffae3 !important;
+}
+
+body.dark-mode table {
+  background: #23272e !important;
+  color: #dadada !important;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.2em;
+}
+
+/* Optional: Smooth transition for dark mode */
+body, .custom-header, nav {
+  transition: background 0.2s, color 0.2s;
 }
