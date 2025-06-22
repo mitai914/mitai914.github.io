@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
 
+/* Add top margin to avoid GitHub Pages banner overlap */
 body {
   font-family: 'Fira Sans', 'Inter', Arial, sans-serif;
   background: #fafbfc;
   color: #23272e;
   transition: background 0.2s, color 0.2s;
+  margin-top: 48px; /* ADDED */
+}
+
+@media (max-width: 600px) {
+  body {
+    margin-top: 56px; /* ADDED for small screens */
+  }
 }
 
 a {
