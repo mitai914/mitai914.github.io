@@ -1,3 +1,11 @@
 title: My Markdown Notes
 description: A simple collection of my Markdown notes, powered by GitHub Pages.
 theme: jekyll-theme-minimal
+
+include:
+  - _includes
+
+# Optionally: Exclude drafts or files you don't want published
+exclude:
+  - README.md
+  - scripts/
