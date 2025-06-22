@@ -125,3 +125,7 @@ body, .custom-header, nav {
 body > div[style*="position: fixed"] {
   display: none !important;
 }
+
+footer {
+  display: none !important;
+}
