@@ -12,6 +12,10 @@ nav {
   display: none !important;
 }
 
+.wrapper > header {
+  display: none !important;
+}
+
 .wrapper {
   margin-left: 0 !important;
   width: 100% !important;
